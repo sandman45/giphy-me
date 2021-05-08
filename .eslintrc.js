@@ -30,7 +30,7 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     'no-param-reassign': ['error', { props: false }],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'import/extensions': [
       'error',
       'ignorePackages',

@@ -3,17 +3,18 @@
     "lib": [ "es2017", "DOM" ],
     "target": "ES5",
     "module": "CommonJS",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "rootDir": "./src",
-    "outDir": "lib",
+    "outDir": "./lib",
     "sourceMap": true,
     "strict": true,
     "typeRoots": [".yarn/cache"],
-    "types": ["node"]
+    "types": ["node", "jest", "mocha"]
   },
-  "include": ["src"],
-  "exclude": [".yarn", "lib", "**/__tests__/*"]
+  "include": ["./src/**/*.ts"],
+  "exclude": [".yarn", "lib", "**/tests/*"]
 }

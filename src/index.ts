@@ -3,7 +3,7 @@ import { writeFileSync } from 'fs';
 import Buffer from 'buffer';
 import giphy from 'giphy-api';
 
-export const giphyMe = async () => {
+const GiphyMe = async () => {
   const now = _.now();
   const GiphyApi = giphy();
   const giphyResult = await GiphyApi.random('top gun');
@@ -13,6 +13,6 @@ export const giphyMe = async () => {
   return 'Success';
 };
 
-giphyMe().then(res => {
-  console.log(res);
-});
+export default {
+  GiphyMe,
+};
