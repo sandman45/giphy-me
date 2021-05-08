@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": [ "es2017", "DOM" ],
+    "target": "ES5",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "rootDir": "./src",
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "typeRoots": [".yarn/cache"],
+    "types": ["node"]
+  },
+  "include": ["src"],
+  "exclude": [".yarn", "lib", "**/__tests__/*"]
+}
