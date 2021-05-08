@@ -2,11 +2,17 @@
   "name": "giphy-me",
   "version": "1.0.0",
   "description": "Giphy Me -- give me some giphys",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "start": "node lib/index.js",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
+    "prepare": "run build",
+    "prepublishOnly": "run test && run lint",
+    "preversion": "run lint",
+    "version": "run format && git add -A src",
+    "postversion": "git push && git push --tags",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "repository": {
