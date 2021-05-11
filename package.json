@@ -8,6 +8,7 @@
     "start": "node lib/index.js",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
+    "format": "prettier --write \"./src/**/*.ts\"",
     "prepare": "run build",
     "prepublishOnly": "run test && run lint",
     "preversion": "run lint",

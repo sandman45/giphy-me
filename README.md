@@ -21,6 +21,10 @@ https://yarnpkg.com/getting-started/install
 
 ### Publishing to NPM
 
+-  Login to npm
+
+    `yarn npm login` 
+
 - Prepare creates a build
 
     `yarn run prepare`
@@ -41,3 +45,6 @@ https://yarnpkg.com/getting-started/install
   
     `yarn run postVersion`
 
+- Publish
+
+  `yarn npm publish`
