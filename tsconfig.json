@@ -13,7 +13,7 @@
     "sourceMap": true,
     "strict": true,
     "typeRoots": [".yarn/cache"],
-    "types": ["node", "jest", "mocha"]
+    "types": ["node", "jest", "mocha", "ts-jest"]
   },
   "include": ["./src/**/*.ts"],
   "exclude": [".yarn", "lib", "**/tests/*"]

@@ -8,6 +8,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   plugins: ['import', 'prettier', '@typescript-eslint'],
   extends: ['airbnb-base', 'prettier'],

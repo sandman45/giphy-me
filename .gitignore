@@ -10,3 +10,4 @@ lib
 !.yarn/versions
 # --- Zero Installs ---
 
+/myCoolFile.txt

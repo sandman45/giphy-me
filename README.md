@@ -1,4 +1,7 @@
-Giphy Me
+#Giphy Me
+
+A fun node module for giphys and me experimenting with
+yarn 2.0 and publishing with yarn.
 
 
 
@@ -15,4 +18,26 @@ https://yarnpkg.com/getting-started/install
 `yarn add [package]`
 
 `yarn add [package] --dev` or `yarn add [package] -D` // dev dependency
+
+### Publishing to NPM
+
+- Prepare creates a build
+
+    `yarn run prepare`
+
+- Pre publish Only runs tests & linting
+
+    `yarn run prepublishOnly`
+
+- Preversion runs lint
+  
+    `yarn run preversion`
+
+- Version runs format and `git add -A src`
+  
+    `yarn run version`
+
+- Post Version `git push && git push --tags`
+  
+    `yarn run postVersion`
 
